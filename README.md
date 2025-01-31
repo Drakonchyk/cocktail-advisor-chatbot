@@ -131,10 +131,11 @@ We use **FAISS** to store cocktail embeddings and retrieve relevant drinks based
 ## Contributing
 Pull requests are welcome! Open an issue for feature requests or bug reports.
 
-## License
-MIT License. See `LICENSE` file for details.
+## Conclusions
+
+The Cocktail Advisor Chatbot successfully integrates FastAPI, Streamlit, and RAG to create an intelligent chatbot for cocktail recommendations and instructions. By fine-tuning a Flan-T5-based LLM, leveraging FAISS for vector retrieval, and optimizing prompts, the system delivers highly relevant and structured responses. Future improvements could include enhancing the dataset, refining prompt tuning, and introducing a full-fledged web-based UI for better user experience.
 
 ---
 
-🚀 **Now your Cocktail Advisor Chatbot is ready for use!** 🍹
+**Now your Cocktail Advisor Chatbot is ready for use!** 🍹
 
