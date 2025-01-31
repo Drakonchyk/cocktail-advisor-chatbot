@@ -80,6 +80,7 @@ Send a chat message to the bot.
 The Streamlit interface allows users to interact with the chatbot. The frontend sends messages to the FastAPI backend and displays responses in a chat format.
 
 ## Training & Fine-Tuning
+### If you don't want to use trained model - skip this step
 ### **Dataset Preparation**
 We generate a dataset containing structured queries and responses:
 - `"How to make Mojito?" → "Muddle mint leaves, lime, and sugar..."`
