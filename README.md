@@ -55,7 +55,7 @@ python fine_tune_with_val.py
 uvicorn main:app --reload
 ```
 
-### **7. Start the Streamlit UI**
+### **7. Start the Streamlit UI in other terminal session**
 ```bash
 streamlit run streamlit_app.py
 ```
