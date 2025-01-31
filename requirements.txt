@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+langchain
+streamlit
+faiss-cpu
+pandas
+transformers
+sentence-transformers
+torch
+datasets
+evaluate
+rouge_score
+nltk
