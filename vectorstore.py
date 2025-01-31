@@ -2,7 +2,6 @@ import pandas as pd
 from langchain.docstore.document import Document
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
-from main import USER_EXCLUDED_INGREDIENTS
 
 def load_drinks_data(csv_path: str):
     """
@@ -73,11 +72,4 @@ def search_top_k(vectorstore, query: str, k=5):
     Filters out drinks containing excluded ingredients.
     """
     results = vectorstore.similarity_search(query, k=k)
-
-    # Apply exclusion filter
-    filtered_results = [
-        doc for doc in results
-        if not any(ing.lower() in doc.page_content.lower() for ing in USER_EXCLUDED_INGREDIENTS)
-    ]
-
-    return filtered_results[:k]
+    return results[:k]
